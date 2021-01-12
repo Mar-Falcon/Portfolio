@@ -102,6 +102,9 @@ h1{
 .fondo{
     background-color: rgb(240, 125, 240);
 }
+.letra-blanco{
+    color: white;
+}
 footer{
     display: flex;
     flex-direction: row;
