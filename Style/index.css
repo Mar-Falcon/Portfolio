@@ -17,8 +17,8 @@ header{
     justify-content: flex-end;
     width: 100vw;
     height: 100px;
-    background-color: blanchedalmond;
-    box-shadow: 0 0 29px 0 rgb(104, 103, 103); /*para darle la sombra*/
+    background-color: rgb(245, 242, 237);
+    box-shadow: 0 0 29px 0 rgb(133, 133, 133); /*para darle la sombra*/
 }
 a{
     color: rgb(104, 103, 103);
@@ -27,7 +27,7 @@ a{
     transition: 0.3s;
 }
 a:hover{
-    color:pink;
+    color: lightgray;
     transform: scale(1.1);
     transition: 0.3s;
 }
@@ -62,11 +62,19 @@ section{
     padding: 110px;
     box-shadow: 0 0 29px 0 rgb(104, 103, 103);
 }
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+    padding: 50px;
+    margin-top: 130px;
+}
 .margen-superior{
     margin-top: 100px;
 }
 h1{
-    color: rgb(168, 43, 168);
+    color: rgb(4, 131, 145);
     font-size: 80px;
 }
 .formato{
@@ -75,7 +83,7 @@ h1{
     margin: 20px;
 }
 .boton{
-    background-color: violet;
+    background-color: rgb(0, 172, 191) ;
     color:white;
     width: 130px;
     padding: 10px;
@@ -86,6 +94,9 @@ h1{
     align-items: center;
     text-decoration: none;
     text-align: center;
+}
+.primerImagen{
+   margin-top: 150px;
 }
 .container{
     height: 700px;
@@ -113,7 +124,7 @@ h1{
     background-color: azure;
 }
 .fondo{
-    background-color: rgb(240, 125, 240);
+    background-color: rgb(0, 172, 191);
 }
 .letra-blanco{
     color: white;
