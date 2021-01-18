@@ -143,7 +143,7 @@ h1{
 }
 .medidas-mayor{
     background-color: rgb(238, 236, 236);
-    height: 3500px;
+    height: 2000px;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -154,12 +154,14 @@ h1{
     box-shadow: 0 0 29px 0 rgb(104, 103, 103);
 }
 .containerProyectos{
-    height: 3000px;
-    width: 1700px;
+    height: 1400px;
+    width: 1650px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /*flex-wrap: wrap;*/
+    justify-content: start;
+    align-items: flex-end;
+    flex-wrap: wrap; 
+    align-content: space-evenly;
 } 
 .cardProyectos{
     display: flex;
@@ -173,7 +175,8 @@ h1{
     box-shadow: 0px 0px 15px 0px  rgb(104, 103, 103);
     font-size: 25px;
     color:  rgb(104, 103, 103);
-    background-color: azure;    
+    background-color: azure; 
+    margin-right: 45px; 
 }
 footer{
     display: flex;
