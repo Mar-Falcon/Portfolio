@@ -4,10 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     width: 100vw;
-    box-shadow: -inset 25px 0 25px rgb(104, 103, 103); /*Esta sombreando solo el footer, chequear porque?*/
-}
+    box-shadow: inset 25px 0 25px rgb(104, 103, 103); Esta sombreando solo el footer, chequear porque?}*/
 header{
     position: fixed;
     top:0;
@@ -20,17 +19,6 @@ header{
     background-color: rgb(245, 242, 237);
     box-shadow: 0 0 29px 0 rgb(133, 133, 133); /*para darle la sombra*/
     z-index: 10;
-}
-a{
-    color: rgb(104, 103, 103);
-    text-decoration: none;
-    transform: scale(1);
-    transition: 0.3s;
-}
-a:hover{
-    color: lightgray;
-    transform: scale(1.1);
-    transition: 0.3s;
 }
 ul{
     color: black;
@@ -46,7 +34,18 @@ li{
     margin-right:25px;
     font-size: 24px;
 }
-a:active{
+.botones-nav{
+    color: rgb(104, 103, 103);
+    text-decoration: none;
+    transform: scale(1);
+    transition: 0.3s;
+}
+.botones-nav:hover{
+    color: lightgray;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.botones-nav:active{
     padding: 10px;
     border: 1px solid lightgray;
     border-radius: 15px;
@@ -125,6 +124,9 @@ h1{
     background-color: azure;
     margin-bottom: 0px;
 }
+.tamanio{
+    font-size: 100px;
+}
 .rojo{
     color: #e54d26;
 }
@@ -143,15 +145,19 @@ h1{
 .naranja{
     color: #f34f29;
 }
+.card:hover{
+    border: solid 1px  rgb(4, 131, 145);
+    color: rgb(4, 131, 145);
+}
 .comentario{
     height: 800px;
     width: 100vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
-    padding: 110px;
+    padding: 90px;
     box-shadow: 0 0 29px 0 rgb(104, 103, 103);
     background-color: rgb(0, 172, 191);
 }
@@ -162,10 +168,16 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
     padding: 110px;
     box-shadow: 0 0 29px 0 rgb(104, 103, 103);
+}
+.columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .containerProyectos{
     height: 1400px;
@@ -192,9 +204,16 @@ h1{
     background-color: azure; 
     margin-right: 45px; 
 }
+a{
+    text-decoration: none;
+}
 .imagenCard{
     width: 300px;
     height: 250px;
+}
+.cardProyectos:hover{
+    border: solid 1px  rgb(4, 131, 145);
+    color: rgb(4, 131, 145);
 }
 footer{
     display: flex;
