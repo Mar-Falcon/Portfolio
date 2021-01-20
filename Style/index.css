@@ -14,23 +14,23 @@ header{
     /* position fixed y top 0 sirven para que mi header quede fijo arriba siempre*/
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100vw;
     height: 100px;
     background-color: rgb(245, 242, 237);
     box-shadow: 0 0 29px 0 rgb(133, 133, 133); /*para darle la sombra*/
-    z-index: 10;
+    z-index: 1;
 }
 section{
     width: 100vw;
 }
 ul{
-    color: black;
+    /*color: black;*/
     list-style: none;
     height: 100px;
     display:flex ;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     margin-right: 35px;
 }
@@ -102,6 +102,8 @@ h1{
 }
 .primerImagen{
    margin-top: 150px;
+   width: 850px;
+   height: 600px;
 }
 .container{
     height: 700px;
@@ -185,7 +187,7 @@ h1{
 }
 .containerProyectos{
     height: 1400px;
-    width: 1650px;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -222,14 +224,47 @@ a{
 .formulario{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    text-align: center;
-    width: 1200px;
+    text-align: start;
+    width: 70%;
     height: 900px;
     padding: 100px;
-    border: solid 1px rgb(184, 216, 216) ;
+    background-color: white;
+    border: solid 1px rgb(184, 216, 216);
+    border-radius: 20px;
 }
+h2{
+    color: rgb(4, 131, 145);
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.padding{
+    padding: 30px;
+}
+input[type=text]{
+    color: black;
+    border-radius: 25px;
+    background-color:rgb(238, 236, 236);
+    width: 35%;
+    height: 40px;
+}
+/*
+input, email{
+    color: black;
+    border-radius: 25px;
+    background-color:rgb(238, 236, 236);
+    width: 35%;
+    height: 40px;
+}
+textarea{
+    color: black;
+    border-radius: 25px;
+    background-color:rgb(238, 236, 236);
+    width: 55%;
+    height: 70px;
+}*/
+
 footer{
     display: flex;
     flex-direction: column;
