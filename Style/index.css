@@ -14,7 +14,7 @@ header{
     /* position fixed y top 0 sirven para que mi header quede fijo arriba siempre*/
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100vw;
     height: 100px;
     background-color: rgb(245, 242, 237);
@@ -85,7 +85,8 @@ h1{
 .formato{
     font-size: 18px;
     color:rgb(104, 103, 103);
-    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .boton{
     background-color: rgb(0, 172, 191) ;
@@ -187,7 +188,7 @@ h1{
 }
 .containerProyectos{
     height: 1400px;
-    width: 70%;
+    width: 1650px;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -221,6 +222,18 @@ a{
     border: solid 1px  rgb(4, 131, 145);
     color: rgb(4, 131, 145);
 }
+.medidas-form{
+    background-color: rgb(238, 236, 236);
+    height: 900px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 110px;
+    box-shadow: 0 0 29px 0 rgb(104, 103, 103);
+}
 .formulario{
     display: flex;
     flex-direction: row;
@@ -228,23 +241,29 @@ a{
     align-items: flex-start;
     text-align: start;
     width: 70%;
-    height: 900px;
+    height: 700px;
     padding: 100px;
     background-color: white;
     border: solid 1px rgb(184, 216, 216);
     border-radius: 20px;
 }
-h2{
+h3{
     color: rgb(4, 131, 145);
     font-size: 60px;
     margin-bottom: 20px;
 }
 .padding{
+    width: 50%;
     padding: 30px;
 }
-/*.caja{
-    width: 50%;
-}*/
+.margen-derecho{
+    margin-right: 70px;
+}
+.iconos{
+    display: flex;
+    justify-content: last baseline;
+    margin-top: 85px;
+}
 input[type=text]{
     color: black;
     border-radius: 25px;
@@ -271,8 +290,6 @@ textarea{
     font-size: 25px;
     color: rgb(4, 131, 145);
     margin: 20px;
-}
-.circulo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,7 +299,11 @@ textarea{
     background-color: white;
     margin-bottom: 30px;
 }
-
+.redes:hover{
+    color: white;
+    background-color:rgb(4, 131, 145) ;
+    border-radius: 50px;
+}
 footer{
     display: flex;
     flex-direction: column;
