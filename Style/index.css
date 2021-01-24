@@ -207,6 +207,10 @@ h1{
     background-color: white; 
     margin-right: 50px; 
 }
+.cardProyectos:active{
+    border: solid 1px  black;
+    border-radius: 15px;    
+}
 a{
     text-decoration: none;
 }
@@ -237,7 +241,7 @@ a{
     justify-content: space-around;
     align-items: flex-start;
     text-align: start;
-    width: 70%;
+    width: 2000px;
     height: 700px;
     padding: 100px;
     background-color: white;
@@ -298,7 +302,11 @@ input[type=text]{
     outline: none;
     border:none;
 }
-input[type=email]:valid{ 
+input[type=text]:focus{
+    border:1px solid rgb(4, 131, 145) ;
+    box-shadow: 2px 2px 5px  rgb(4, 131, 145);
+}
+input[type=email]{ 
     color: black;
     border-radius: 25px;
     background-color:rgb(238, 236, 236);
@@ -306,6 +314,13 @@ input[type=email]:valid{
     height: 40px;
     outline: none;
     border:none;
+}
+input[type=email]:focus{
+    border:1px solid rgb(4, 131, 145) ;
+    box-shadow: 2px 2px 5px  rgb(4, 131, 145);
+}
+input[type=email]:valid{
+    
 }
 textarea{
     color: black;
@@ -315,17 +330,26 @@ textarea{
     outline: none;
     border:none;    
 }
+textarea:focus{
+    border:1px solid rgb(4, 131, 145) ;
+    box-shadow: 2px 2px 5px  rgb(4, 131, 145);
+}
 input[type=submit]{
-    color: white;
-    /*ext-decoration: none;
-    transform: scale(1);
-    transition: 0.3s;*/
+    color: white;    
     width: 25%;
     height: 45px;
     border-radius: 25px;
     background-color: rgb(4, 131, 145) ;
     border:none; 
     font-size: 20px;
+    outline: none;
+}
+input[type=submit]:hover{
+    transform: scale(1);
+    transition: 0.3s;
+    color:rgb(133, 133, 133);background-color: rgb(184, 216, 216);
+    border: 1px solid rgb(4, 131, 145) ;
+    cursor: pointer;
 }
 .datos{
     display:flex;
