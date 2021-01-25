@@ -4,12 +4,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-/*html{
+html{
     width: 100vw;
-}*/
+    box-shadow: inset 25px 0 25px rgb(104, 103, 103); 
+}
 body{
     width: 100vw;
-    box-shadow: inset 25px 0 25px rgb(104, 103, 103); /*Esta sombreando solo el footer, chequear porque?*/
+    /*Esta sombreando solo el footer, chequear porque?*/
 }
 header{
     position: fixed;
@@ -24,13 +25,13 @@ header{
     box-shadow: 0 0 29px 0 rgb(133, 133, 133);
     z-index: 1;
 }
-/*
+
 .main{
     width: 100vw;
 }
 section{
     width: 100vw;
-}*/
+}
 ul{
     list-style: none;
     height: 100px;
