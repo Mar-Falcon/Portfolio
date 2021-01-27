@@ -4,33 +4,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-html{
-    width: 100vw;
-    box-shadow: inset 25px 0 25px rgb(104, 103, 103); 
-}
-body{
-    width: 100vw;
-    /*Esta sombreando solo el footer, chequear porque?*/
-}
 header{
     position: fixed;
     top:0;
-    /*
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;*/
     width: 100vw;
     height: 100px;
     background-color: rgb(245, 242, 237);
     box-shadow: 0 0 29px 0 rgb(133, 133, 133);
     z-index: 1;
-}
-
-.main{
-    width: 100vw;
-}
-section{
-    width: 100vw;
 }
 ul{
     list-style: none;
@@ -77,22 +58,23 @@ a{
 }
 .medidas{
     background-color: rgb(238, 236, 236);
-    height: 1200px;
     width: 100vw;
+    height: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    padding: 110px;
+    padding: 50px;
     box-shadow: 0 0 29px 0 rgb(104, 103, 103);
 }
 .presentacion{
+    width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: star;
     text-align: start;
-    padding: 50px;
+    padding: 20px;
     margin-top: 130px;
 }
 .margen-superior{
@@ -118,13 +100,21 @@ h1{
 }
 .primerImagen{
    margin-top: 150px;
-   width: 850px;
+   width: 750px;
    height: 600px;
 }
 .center{
     width: 1200px;
     display: flex;
     justify-content: center;
+}
+.conocimientos{
+    padding-top: 100px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 .container{
     height: 700px;
@@ -149,7 +139,6 @@ h1{
     font-size: 25px;
     color:  rgb(104, 103, 103);
     background-color: white;
-    margin-bottom: 0px;
 }
 .tamanio{
     font-size: 100px;
@@ -178,8 +167,8 @@ h1{
     background-color: azure;
 }
 .comentario{
-    height: 800px;
     width: 100vw;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,8 +183,8 @@ h1{
 }
 .medidas-mayor{
     background-color: rgb(238, 236, 236);
-    height: 2000px;
     width: 100vw;
+    height: 2000px;    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -205,19 +194,19 @@ h1{
     box-shadow: 0 0 29px 0 rgb(104, 103, 103);
 }
 .columna{
+    width: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;/* ver esto*/
 }
-.containerProyectos{
+.containerProyectos{    
+    width: 1100px;
     height: 1400px;
-    width: 1650px;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap; 
     align-content: space-evenly;
 } 
@@ -227,7 +216,7 @@ h1{
     justify-content: center;
     align-items: center;
     width: 500px;
-    height: 400px;
+    height: 300px;
     border: solid 1px  rgb(184, 216, 216);
     border-radius: 15px;
     box-shadow: 0px 0px 15px 0px  rgb(104, 103, 103);
@@ -251,14 +240,14 @@ h1{
 }
 .medidas-form{
     background-color: rgb(238, 236, 236);
-    height: 900px;
     width: 100vw;
+    height: 900px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    padding: 110px;
+    padding: 100px;
     box-shadow: 0 0 29px 0 rgb(104, 103, 103);
 }
 .contacto{
@@ -267,15 +256,15 @@ h1{
     justify-content: space-around;
     align-items: flex-start;
     text-align: start;
-    width: 2000px;
+    width: 1200px;
     height: 700px;
-    padding: 100px;
+    padding: 15px;
     background-color: white;
     border: solid 1px rgb(184, 216, 216);
-    border-radius: 20px;
+    border-radius: 25px;
 }
 .espacioContacto{
-    width: 45%;
+    width: 50%;
     height: 500px;
     padding: 30px;
 }
@@ -367,10 +356,6 @@ input[type=email]:focus{
     border:1px solid rgb(4, 131, 145) ;
     box-shadow: 2px 2px 5px  rgb(4, 131, 145);
 }
-input[type=email]:valid{
-    
-    
-}
 textarea{
     color: black;
     border-radius: 25px;
@@ -417,7 +402,178 @@ footer{
     color: lightgray;
 }
 
+/*Responsive*/
+
 @media screen and (max-width: 576px) { 
     header { display: none; } 
+    .medidas{
+        background-color: rgb(238, 236, 236);
+        width: 100vw;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 80px;
+    }
+    .presentacion{
+        width: 100vw;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .nombrePrincipal{
+        font-size: 70px;
+        margin-top: 15px;
+    }
+    .boton{
+        margin-left: 150px;        
+    }
+    .primerImagen{
+        margin-top: 20px;
+        width: 450px;
+        height: 300px;
+     }
+     .conocimientos{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40px;
+    }    
+    .container{
+        height: 700px;
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+    } 
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;  
+        font-size: 10px;
+    }
+    .imagenCard{
+        width: 150px;
+        height: 125px;
+    }
+    .formato{
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .center{
+        width: 450px;
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .medidas-mayor{
+        width: 100vw;
+        height: 2000px;    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .columna{
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerProyectos{    
+        width: 100vw;
+        height: 1750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap 
+    } 
+    .cardProyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 225px;
+        font-size: 12px;
+        margin: 5px; 
+    }
+    .imagenCard{
+        width: 150px;
+        height: 150px;
+    }
+    .medidas-form{
+        width: 100vw;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: center;
+        padding: 25px;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        text-align: start;
+        width: 450px;
+        height: 1100px;
+        padding: 10px;
+    }
+    .espacioContacto{
+        width: 90%;
+        height: 400px;
+        padding: 0px;
+    }
+    h3{
+        font-size: 30px;
+        margin-bottom: 2px;
+    }
+    .iconos{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .NombreApellido{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        width: 100%;
+}
+    footer .botones-nav{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 150px;
+    }
+
+
 
 } 
