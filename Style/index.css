@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /*Comienzo de estilado de Header*/
 header{
     position: fixed;
@@ -21,7 +22,7 @@ ul{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 35px;
+    /*margin-right: 35px;*/
 }
 li{
     margin-right:25px;
@@ -56,31 +57,35 @@ a{
     align-items: center;
     text-decoration: none;
     text-align: center;
+    margin-right: 10px;
 }
 /*Comienzo de estilado de section*/
 /*Class medidas se aplica a varias section*/
 .medidas{
     background-color: rgb(238, 236, 236);
     width: 100vw;
-    height: 1200px;
+    height: 1700px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
+    align-content: center;
     text-align: center;
     padding: 50px;
     box-shadow: 0 0 29px 0 rgb(104, 103, 103);
 }
 /*Estilado de sectio 1 = Presentación*/
 .presentacion{
-    width: 900px;
+    width: 90%;
     height: 1000px;
     display: flex;
     flex-direction: row;
-    justify-content: star;
+    justify-content: center;
     text-align: start;
+    align-items: center;
+    /*align-content: space-between;*/
     padding: 20px;
-    margin-top: 130px;
+    /*margin-top: 130px;*/
 }
 .margen-superior{
     margin-top: 100px;
@@ -110,24 +115,28 @@ h1{
 }
 /*Comienzo de estilado de section 2 = Conocimientos*/
 .center{
-    width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 .conocimientos{
-    padding-top: 100px;
-    width: 1200px;
+    /*padding-top: 100px;*/
+    width: 50%;
+    /*height: 1700px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    /*text-align: center;
+    align-content: center;*/
 }
 .container{
     height: 700px;
     width: 1200px;
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     align-content: space-evenly;
 } 
@@ -174,7 +183,7 @@ h1{
 }
 /*Cimienzo de estilado de sección 3 = Comentario*/
 .comentario{
-    width: 100vw;
+    /*width: 100vw;*/
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -202,7 +211,7 @@ h1{
     box-shadow: 0 0 29px 0 rgb(104, 103, 103);
 }
 .columna{
-    width: 1100px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -249,7 +258,7 @@ h1{
 /*Comienzo de estilado de sección 5 = Contacto*/
 .medidas-form{
     background-color: rgb(238, 236, 236);
-    width: 100vw;
+   /* width: 100vw;*/
     height: 900px;
     display: flex;
     flex-direction: row;
@@ -265,7 +274,7 @@ h1{
     justify-content: space-around;
     align-items: flex-start;
     text-align: start;
-    width: 1200px;
+    width: 100%;
     height: 700px;
     padding: 15px;
     background-color: white;
@@ -411,21 +420,31 @@ footer{
     background-color: rgb(0, 172, 191);
     color: lightgray;
 }
+html,body
+{
+	/*width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;*/
+	overflow-x: hidden;
+}
 
 /*Responsive 1, mobile*/
 
 @media screen and (max-width: 576px) { 
     header { display: none; } 
     .medidas{
-        background-color: rgb(238, 236, 236);
-        width: 100vw;
-        height: 1200px;
+        /*background-color: rgb(238, 236, 236);
+        /*width: 100vw;*/
+        height: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        /*align-content: center;/*
+        
         text-align: center;
-        padding: 80px;
+        /*padding: 50px;*/
     }
     .presentacion{
         width: 100vw;
@@ -433,36 +452,36 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
-        margin-top: 20px;
-    }
+        text-align: center;}
+        /*margin-top: 20px;*/
     .nombrePrincipal{
-        font-size: 70px;
+        font-size: 50px;
         margin-top: 15px;
     }
     .boton{
-        margin-left: 150px;        
+        margin-left: 100px;        
     }
     .primerImagen{
         margin-top: 20px;
-        width: 450px;
+        width: 350px;
         height: 300px;
      }
-     .conocimientos{
-        width: 100vw;
-        height: 1000px;
+    .conocimientos{
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
-        padding-top: 40px;
-    }    
+        /*text-align: center;*/
+        /*padding-top: 40px;*/
+    }   
     .container{
-        height: 700px;
-        width: 500px;
+        height: 1000px;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         align-content: space-evenly;
     } 
@@ -471,27 +490,34 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 200px;
-        height: 200px;  
-        font-size: 10px;
+        /*width: 300px;
+        height: 300px; */ 
+        width: 100px;
+        height: 100px;
+        font-size: 15px;
+        margin: 5px;
     }
     .imagenCard{
-        width: 150px;
-        height: 125px;
+        font-size: 15px;
+        /*width: 25px;
+        height: 25px;*/
+    }
+    .tamanio{
+        font-size: 50px;
     }
     .formato{
-        font-size: 16px;
-        margin-top: 15px;
+        font-size: 16px;}
+       /* margin-top: 15px;
         margin-bottom: 20px;
-    }
+    }*/
     .center{
-        width: 450px;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
     h1{
-        font-size: 50px;
-    }
+        font-size: 24px;
+    }/*
     .medidas-mayor{
         width: 100vw;
         height: 2100px;    
@@ -500,18 +526,17 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
+    }*/
     .columna{
-        width: 100vw;
-        height: 2000px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: flex-start;
+        align-content: flex-start;
     }
     .containerProyectos{    
-        width: 100vw;
-        height: 1850px;
+        width: 100%;
+        height: 1600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -533,39 +558,53 @@ footer{
         height: 150px;
     }
     .medidas-form{
+        background-color: rgb(238, 236, 236);
         width: 100vw;
         height: 1200px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: center;
-        padding: 25px;
-    }
-    .contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: flex-start;
         text-align: start;
-        width: 450px;
-        height: 1100px;
-        padding: 10px;
-    }
-    .espacioContacto{
-        width: 90%;
-        height: 400px;
         padding: 0px;
     }
-    h3{
-        font-size: 30px;
-        margin-bottom: 2px;
+    .contacto{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+            text-align: start;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            background-color: white;
+            border: solid 1px rgb(184, 216, 216);
+            border-radius: 0px;
     }
-    .iconos{
+    h3{
+            color: rgb(4, 131, 145);
+            font-size: 20px;
+            margin-bottom: 5px;
+    }
+    .espacioContacto{
+        width: 100%;
+        height: 500px;
+        padding: 3px;
+    }
+    .redes{
+        font-size: 25px;
+        color: rgb(4, 131, 145);
+        /*margin: 15px;*/
         display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: white;
+    }
+    span{ 
+        font-size: 18px;
     }
     .NombreApellido{
         display:flex;
@@ -582,65 +621,62 @@ footer{
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 150px;
+        height: 170px;
     }
 } 
 /* Responsive 2*/
+
 @media screen and (max-width: 980px){
+
     .medidas{
-        background-color: rgb(238, 236, 236);
-        width: 100vw;
-        height: 1100px;
+        /*background-color: rgb(238, 236, 236);
+        /*width: 100vw;*/
+        height: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        /*align-content: center;/*
+        
         text-align: center;
-        padding: 80px;
+        /*padding: 50px;*/
     }
     .presentacion{
         width: 100vw;
-        height: 500px;
+        height: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
+        text-align: center;}
         /*margin-top: 20px;*/
-    }
     .nombrePrincipal{
-        font-size: 70px;
+        font-size: 50px;
         margin-top: 15px;
     }
     .boton{
-        margin-left: 150px;        
+        margin-left: 100px;        
     }
     .primerImagen{
         margin-top: 20px;
-        width: 450px;
+        width: 350px;
         height: 300px;
      }
-     .center{
-        width: 600px;
-        display: flex;
-        justify-content: center;
-        margin-left: 45px;
-    }
-     .conocimientos{
-        width: 800px;
-        height: 1300px;
+    .conocimientos{
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
-        margin-top: 120px;
-        padding: 140px;
-    }    
+        /*text-align: center;*/
+        /*padding-top: 40px;*/
+    }   
     .container{
-        width: 500px;
-        height: 700px;
+        height: 1000px;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         align-content: space-evenly;
     } 
@@ -649,47 +685,53 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 200px;
-        height: 200px;  
-        font-size: 10px;
+        /*width: 300px;
+        height: 300px; */ 
+        width: 100px;
+        height: 100px;
+        font-size: 15px;
+        margin: 5px;
     }
     .imagenCard{
-        width: 150px;
-        height: 125px;
+        font-size: 15px;
+        /*width: 25px;
+        height: 25px;*/
+    }
+    .tamanio{
+        font-size: 50px;
     }
     .formato{
-        font-size: 16px;
-        margin-top: 15px;
+        font-size: 16px;}
+       /* margin-top: 15px;
         margin-bottom: 20px;
-    }
+    }*/
     .center{
-        width: 450px;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
     h1{
-        font-size: 50px;
-    }
+        font-size: 24px;
+    }/*
     .medidas-mayor{
         width: 100vw;
-        height: 2000px;    
+        height: 2100px;    
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
+    }*/
     .columna{
-        width: 100vw;
-        height: 100px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: flex-start;
+        align-content: flex-start;
     }
     .containerProyectos{    
-        width: 100vw;
-        height: 1750px;
+        width: 100%;
+        height: 1600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -711,45 +753,62 @@ footer{
         height: 150px;
     }
     .medidas-form{
+        background-color: rgb(238, 236, 236);
         width: 100vw;
         height: 1200px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: center;
-        padding: 35px;
-    }
-    .contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: flex-start;
         text-align: start;
-        width: 650px;
-        height: 1100px;
-        padding: 10px;
-    }
-    .espacioContacto{
-        width: 90%;
-        height: 400px;
         padding: 0px;
     }
-    h3{
-        font-size: 30px;
-        margin-bottom: 2px;
+    .contacto{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+            text-align: start;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            background-color: white;
+            border: solid 1px rgb(184, 216, 216);
+            border-radius: 0px;
     }
-    .iconos{
+    h3{
+            color: rgb(4, 131, 145);
+            font-size: 20px;
+            margin-bottom: 5px;
+    }
+    .espacioContacto{
+        width: 100%;
+        height: 500px;
+        padding: 3px;
+    }
+    .redes{
+        font-size: 25px;
+        color: rgb(4, 131, 145);
+        /*margin: 15px;*/
         display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: white;
+    }
+    span{ 
+        font-size: 18px;
     }
     .NombreApellido{
         display:flex;
         flex-direction:column;
         justify-content: space-between;
         width: 100%;
+}
+    footer .botones-nav{
+        display: none;
     }
     footer{
         display: flex;
@@ -757,6 +816,7 @@ footer{
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 250px;
+        height: 170px;
     }
-}
+} 
+    
