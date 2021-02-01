@@ -22,7 +22,6 @@ ul{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    /*margin-right: 35px;*/
 }
 li{
     margin-right:25px;
@@ -60,32 +59,28 @@ a{
     margin-right: 10px;
 }
 /*Comienzo de estilado de section*/
-/*Class medidas se aplica a varias section*/
+/*La class medidas se aplica a varias section*/
 .medidas{
     background-color: rgb(238, 236, 236);
     width: 100vw;
-    height: 1700px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*align-items: flex-start;*/
     align-content: center;
     text-align: center;
     padding: 50px;
     box-shadow: 0 0 29px 0 rgb(104, 103, 103);
 }
-/*Estilado de sectio 1 = Presentación*/
+/*Comienzo de estilado de section 1 = Presentación*/
 .presentacion{
     width: 90%;
-    height: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: start;
     align-items: center;
-    /*align-content: space-between;*/
     padding: 20px;
-    /*margin-top: 130px;*/
+    margin-bottom: 200px;
 }
 .margen-superior{
     margin-top: 100px;
@@ -120,18 +115,15 @@ h1{
     justify-content: center;
 }
 .conocimientos{
-    /*padding-top: 100px;*/
     width: 50%;
-    /*height: 1700px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*text-align: center;
-    align-content: center;*/
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .container{
-    height: 700px;
     width: 1200px;
     display: flex;
     flex-direction:row;
@@ -143,9 +135,9 @@ h1{
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-right: 35px;
+    justify-content: center;    
     align-items: center;
+    margin: 35px;
     width: 300px;
     height: 300px;
     border: solid 1px  rgb(184, 216, 216);
@@ -181,16 +173,14 @@ h1{
     color: rgb(4, 131, 145);
     background-color: azure;
 }
-/*Cimienzo de estilado de sección 3 = Comentario*/
+/*Comienzo de estilado de sección 3 = Comentario*/
 .comentario{
-    /*width: 100vw;*/
-    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 100px;
+    padding: 400px;
     box-shadow: 0 0 29px 0 rgb(104, 103, 103);
     background-color: rgb(0, 172, 191);
 }
@@ -200,15 +190,14 @@ h1{
 /*Comienzo de estilado de sección 4 = Proyectos*/
 .medidas-mayor{
     background-color: rgb(238, 236, 236);
-    width: 100vw;
-    height: 2000px;    
+    width: 100vw;    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 110px;
-    box-shadow: 0 0 29px 0 rgb(104, 103, 103);
+    padding: 100px;
+    box-shadow: 0 0 29px 0 rgb(104, 103, 103);   
 }
 .columna{
     width: 80%;
@@ -218,8 +207,7 @@ h1{
     align-items: center;
 }
 .containerProyectos{    
-    width: 1100px;
-    height: 1400px;
+    width: 1100px;    
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -240,7 +228,7 @@ h1{
     font-size: 25px;
     color:  rgb(104, 103, 103);
     background-color: white; 
-    margin-right: 50px; 
+    margin: 10px; 
 }
 .imagenCard{
     width: 300px;
@@ -258,33 +246,29 @@ h1{
 /*Comienzo de estilado de sección 5 = Contacto*/
 .medidas-form{
     background-color: rgb(238, 236, 236);
-   /* width: 100vw;*/
-    height: 900px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     text-align: center;
     padding: 100px;
-    box-shadow: 0 0 29px 0 rgb(104, 103, 103);
+    box-shadow: 0 0 29px 0 rgb(104, 103, 103);    
 }
 .contacto{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    text-align: start;
-    width: 100%;
-    height: 700px;
+    text-align: start;    
     padding: 15px;
     background-color: white;
     border: solid 1px rgb(184, 216, 216);
     border-radius: 25px;
 }
 .espacioContacto{
-    width: 50%;
-    height: 500px;
+    width: 100%;
     padding: 30px;
+    padding-right: 20px;
 }
 h3{
     color: rgb(4, 131, 145);
@@ -388,7 +372,7 @@ textarea:focus{
 }
 input[type=submit]{
     color: white;    
-    width: 25%;
+    width: 100px;
     height: 45px;
     border-radius: 25px;
     background-color: rgb(4, 131, 145) ;
@@ -422,401 +406,110 @@ footer{
 }
 html,body
 {
-	/*width: 100%;
-	height: 100%;
-	margin: 0px;
-	padding: 0px;*/
 	overflow-x: hidden;
 }
 
 /*Responsive 1, mobile*/
 
-@media screen and (max-width: 576px) { 
-    header { display: none; } 
+@media screen and (max-width: 1050px) { 
+    header { 
+        display: none; 
+    } 
     .medidas{
-        /*background-color: rgb(238, 236, 236);
-        /*width: 100vw;*/
-        height: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /*align-content: center;/*
-        
-        text-align: center;
-        /*padding: 50px;*/
     }
     .presentacion{
-        width: 100vw;
-        height: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;}
-        /*margin-top: 20px;*/
+        text-align: center;
+    }    
     .nombrePrincipal{
         font-size: 50px;
         margin-top: 15px;
     }
+    h1{
+        font-size: 24px;
+    }
     .boton{
-        margin-left: 100px;        
+        padding: 15px;        
+    }
+    .formato{
+        font-size: 16px;
     }
     .primerImagen{
         margin-top: 20px;
-        width: 350px;
-        height: 300px;
-     }
-    .conocimientos{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /*text-align: center;*/
-        /*padding-top: 40px;*/
-    }   
-    .container{
-        height: 1000px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: space-evenly;
+        width: 280px;
+        height: 280px;
+    }    
+    .container{        
+        width: 100%;        
     } 
-    .card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /*width: 300px;
-        height: 300px; */ 
+    .card{        
         width: 100px;
         height: 100px;
         font-size: 15px;
         margin: 5px;
     }
-    .imagenCard{
-        font-size: 15px;
-        /*width: 25px;
-        height: 25px;*/
-    }
     .tamanio{
         font-size: 50px;
-    }
-    .formato{
-        font-size: 16px;}
-       /* margin-top: 15px;
-        margin-bottom: 20px;
-    }*/
-    .center{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    h1{
-        font-size: 24px;
-    }/*
-    .medidas-mayor{
-        width: 100vw;
-        height: 2100px;    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }*/
-    .columna{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: flex-start;
-        align-content: flex-start;
+    } 
+    .comentario{
+        padding: 50px;
     }
     .containerProyectos{    
         width: 100%;
-        height: 1600px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap 
-    } 
+    }     
     .cardProyectos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
+        width: 270px;
         height: 225px;
-        font-size: 12px;
-        margin: 5px; 
+        font-size: 12px;        
     }
     .imagenCard{
         width: 150px;
         height: 150px;
     }
     .medidas-form{
-        background-color: rgb(238, 236, 236);
+        background-color: white;
         width: 100vw;
-        height: 1200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: start;
         padding: 0px;
     }
     .contacto{
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: flex-start;
-            text-align: start;
-            width: 100%;
-            height: 100%;
-            padding: 5px;
-            background-color: white;
-            border: solid 1px rgb(184, 216, 216);
-            border-radius: 0px;
-    }
-    h3{
-            color: rgb(4, 131, 145);
-            font-size: 20px;
-            margin-bottom: 5px;
-    }
-    .espacioContacto{
-        width: 100%;
-        height: 500px;
-        padding: 3px;
-    }
-    .redes{
-        font-size: 25px;
-        color: rgb(4, 131, 145);
-        /*margin: 15px;*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-        background-color: white;
-    }
-    span{ 
-        font-size: 18px;
-    }
-    .NombreApellido{
-        display:flex;
-        flex-direction:column;
-        justify-content: space-between;
-        width: 100%;
-}
-    footer .botones-nav{
-        display: none;
-    }
-    footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 170px;
-    }
-} 
-/* Responsive 2*/
-
-@media screen and (max-width: 980px){
-
-    .medidas{
-        /*background-color: rgb(238, 236, 236);
-        /*width: 100vw;*/
-        height: 700px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /*align-content: center;/*
-        
-        text-align: center;
-        /*padding: 50px;*/
-    }
-    .presentacion{
-        width: 100vw;
-        height: 700px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;}
-        /*margin-top: 20px;*/
-    .nombrePrincipal{
-        font-size: 50px;
-        margin-top: 15px;
-    }
-    .boton{
-        margin-left: 100px;        
-    }
-    .primerImagen{
-        margin-top: 20px;
-        width: 350px;
-        height: 300px;
-     }
-    .conocimientos{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /*text-align: center;*/
-        /*padding-top: 40px;*/
-    }   
-    .container{
-        height: 1000px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: space-evenly;
-    } 
-    .card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /*width: 300px;
-        height: 300px; */ 
-        width: 100px;
-        height: 100px;
-        font-size: 15px;
-        margin: 5px;
-    }
-    .imagenCard{
-        font-size: 15px;
-        /*width: 25px;
-        height: 25px;*/
-    }
-    .tamanio{
-        font-size: 50px;
-    }
-    .formato{
-        font-size: 16px;}
-       /* margin-top: 15px;
-        margin-bottom: 20px;
-    }*/
-    .center{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    h1{
-        font-size: 24px;
-    }/*
-    .medidas-mayor{
-        width: 100vw;
-        height: 2100px;    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }*/
-    .columna{
+        width: 100%;  
         display: flex;
         flex-direction: column;
         justify-content: start;
-        align-items: flex-start;
-        align-content: flex-start;
-    }
-    .containerProyectos{    
-        width: 100%;
-        height: 1600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap 
-    } 
-    .cardProyectos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        height: 225px;
-        font-size: 12px;
-        margin: 5px; 
-    }
-    .imagenCard{
-        width: 150px;
-        height: 150px;
-    }
-    .medidas-form{
-        background-color: rgb(238, 236, 236);
-        width: 100vw;
-        height: 1200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: start;
         padding: 0px;
-    }
-    .contacto{
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: flex-start;
-            text-align: start;
-            width: 100%;
-            height: 100%;
-            padding: 5px;
-            background-color: white;
-            border: solid 1px rgb(184, 216, 216);
-            border-radius: 0px;
-    }
-    h3{
-            color: rgb(4, 131, 145);
-            font-size: 20px;
-            margin-bottom: 5px;
+        padding-right: 3px;
+        border: 0;
     }
     .espacioContacto{
         width: 100%;
-        height: 500px;
-        padding: 3px;
-    }
-    .redes{
-        font-size: 25px;
-        color: rgb(4, 131, 145);
-        /*margin: 15px;*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-        background-color: white;
+        margin: 2px;
+        margin-top: 20px;
+        margin-bottom: 130px;
+        padding: 2px;
+        padding-right: 3px;
+    } 
+    h3{
+        font-size: 20px;
+        margin-bottom: 5px;
     }
     span{ 
-        font-size: 18px;
+        font-size: 12px;
     }
     .NombreApellido{
+        width: 100%;
         display:flex;
         flex-direction:column;
-        justify-content: space-between;
-        width: 100%;
-}
+    }
     footer .botones-nav{
         display: none;
     }
-    footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 170px;
-    }
 } 
-    
+
