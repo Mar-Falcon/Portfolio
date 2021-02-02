@@ -409,12 +409,10 @@ html,body
 	overflow-x: hidden;
 }
 
-/*Responsive 1, mobile*/
+/*Responsive*/
+/* Breakpoints 1 */
 
-@media screen and (max-width: 1050px) { 
-    header { 
-        display: none; 
-    } 
+@media screen and (max-width: 1200px){
     .medidas{
         display: flex;
         flex-direction: column;
@@ -426,7 +424,39 @@ html,body
         flex-direction: column;
         justify-content: center;
         text-align: center;
-    }    
+    } 
+    .container{        
+        width: 100%;        
+    } 
+    .comentario{
+        padding: 50px;
+    }
+    .containerProyectos{    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    } 
+    .contacto{
+        width: 100%;  
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .espacioContacto{
+        width: 100%;
+        margin: 2px;
+        margin-top: 20px;
+        margin-bottom: 130px;
+        padding: 2px;
+        padding-right: 3px;
+    } 
+}
+/* Breakpoints 2, mobile*/
+
+@media screen and (max-width: 768px) { 
+    header { 
+        display: none; 
+    } 
     .nombrePrincipal{
         font-size: 50px;
         margin-top: 15px;
@@ -445,9 +475,6 @@ html,body
         width: 280px;
         height: 280px;
     }    
-    .container{        
-        width: 100%;        
-    } 
     .card{        
         width: 100px;
         height: 100px;
@@ -457,14 +484,6 @@ html,body
     .tamanio{
         font-size: 50px;
     } 
-    .comentario{
-        padding: 50px;
-    }
-    .containerProyectos{    
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }     
     .cardProyectos{
         width: 270px;
         height: 225px;
@@ -479,23 +498,11 @@ html,body
         width: 100vw;
         padding: 0px;
     }
-    .contacto{
-        width: 100%;  
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+    .contacto{        
         padding: 0px;
         padding-right: 3px;
         border: 0;
     }
-    .espacioContacto{
-        width: 100%;
-        margin: 2px;
-        margin-top: 20px;
-        margin-bottom: 130px;
-        padding: 2px;
-        padding-right: 3px;
-    } 
     h3{
         font-size: 20px;
         margin-bottom: 5px;
