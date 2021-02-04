@@ -337,10 +337,14 @@ input[type=text]{
     border-radius: 25px;
     background-color:rgb(238, 236, 236);
     width: 100%;
-    height: 40px;
     outline: none;
     border:none;
+    padding: 15px;
 }
+input[type=text]:valid:not(:placeholder-shown){
+    border: 2px solid green;
+}
+
 input[type=text]:focus{
     border:1px solid rgb(4, 131, 145) ;
     box-shadow: 2px 2px 5px  rgb(4, 131, 145);
@@ -350,9 +354,15 @@ input[type=email]{
     border-radius: 25px;
     background-color:rgb(238, 236, 236);
     width: 100%;
-    height: 40px;
     outline: none;
     border:none;
+    padding: 15px;
+}
+input[type=email]:valid:not(:placeholder-shown){
+    border: 2px solid green;
+}
+input[type=email]:invalid:not(:placeholder-shown){
+    border: 2px solid  red;
 }
 input[type=email]:focus{
     border:1px solid rgb(4, 131, 145) ;
@@ -362,9 +372,12 @@ textarea{
     color: black;
     border-radius: 25px;
     background-color:rgb(238, 236, 236);
-    padding: 10px;
+    padding: 15px;
     outline: none;
     border:none;    
+}
+textarea:valid:not(:placeholder-shown){
+    border: 1px solid green;
 }
 textarea:focus{
     border:1px solid rgb(4, 131, 145) ;
@@ -383,7 +396,8 @@ input[type=submit]{
 input[type=submit]:hover{
     transform: scale(1);
     transition: 0.3s;
-    color:rgb(133, 133, 133);background-color: rgb(184, 216, 216);
+    color:rgb(133, 133, 133);
+    background-color: rgb(184, 216, 216);
     border: 1px solid rgb(4, 131, 145) ;
     cursor: pointer;
 }
@@ -413,6 +427,9 @@ html,body
 /* Breakpoints 1 */
 
 @media screen and (max-width: 1200px){
+    header { 
+        display: none; 
+    } 
     .medidas{
         display: flex;
         flex-direction: column;
@@ -425,11 +442,25 @@ html,body
         justify-content: center;
         text-align: center;
     } 
+    .boton{
+        padding: 15px; 
+        margin-left: 300px; 
+        margin-right: 300px;      
+    }
+    .conocimientos{
+        width: 100vw;
+    }
     .container{        
-        width: 100%;        
+        width: 100vw;        
     } 
     .comentario{
         padding: 50px;
+    }
+    .medidas-mayor{
+        padding: 50px;
+    }
+    .columna{
+        width: 100%;
     }
     .containerProyectos{    
         width: 100%;
@@ -449,14 +480,22 @@ html,body
         margin-bottom: 130px;
         padding: 2px;
         padding-right: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     } 
+    
 }
 /* Breakpoints 2, mobile*/
 
-@media screen and (max-width: 768px) { 
-    header { 
+@media screen and (max-width: 767px) { 
+    /*header { 
         display: none; 
-    } 
+    } */
+    .presentacion{
+        width: 50%;
+    }
     .nombrePrincipal{
         font-size: 50px;
         margin-top: 15px;
@@ -465,7 +504,9 @@ html,body
         font-size: 24px;
     }
     .boton{
-        padding: 15px;        
+        padding: 15px;   
+        margin-right: 90px;  
+        margin-left: 90px;     
     }
     .formato{
         font-size: 16px;
@@ -476,8 +517,8 @@ html,body
         height: 280px;
     }    
     .card{        
-        width: 100px;
-        height: 100px;
+        width: 170px;
+        height: 170px;
         font-size: 15px;
         margin: 5px;
     }
@@ -498,7 +539,8 @@ html,body
         width: 100vw;
         padding: 0px;
     }
-    .contacto{        
+    .contacto{   
+        /*width: 100%;*/     
         padding: 0px;
         padding-right: 3px;
         border: 0;
