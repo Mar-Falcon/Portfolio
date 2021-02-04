@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /*Comienzo de estilado de Header*/
 header{
     position: fixed;
@@ -323,7 +322,7 @@ h3{
 .datos{
     display:flex;
     flex-direction:column;
-    justify-content: column;
+    justify-content: flex-start;
     margin: 20px;
     flex-grow: 1;
 }
@@ -422,10 +421,8 @@ html,body
 {
 	overflow-x: hidden;
 }
-
 /*Responsive*/
 /* Breakpoints 1 */
-
 @media screen and (max-width: 1200px){
     header { 
         display: none; 
@@ -448,7 +445,7 @@ html,body
         margin-right: 300px;      
     }
     .conocimientos{
-        width: 100vw;
+        width: 95%;
     }
     .container{        
         width: 100vw;        
@@ -468,7 +465,7 @@ html,body
         flex-direction: column;
     } 
     .contacto{
-        width: 100%;  
+        width: 100vw;  
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -482,17 +479,14 @@ html,body
         padding-right: 3px;
         display: flex;
         flex-direction: column;
+    }   
+    h3{
+        display: flex;
         justify-content: center;
-        align-items: center;
-    } 
-    
+    }
 }
 /* Breakpoints 2, mobile*/
-
-@media screen and (max-width: 767px) { 
-    /*header { 
-        display: none; 
-    } */
+@media screen and (max-width: 576px) { 
     .presentacion{
         width: 50%;
     }
@@ -539,8 +533,7 @@ html,body
         width: 100vw;
         padding: 0px;
     }
-    .contacto{   
-        /*width: 100%;*/     
+    .contacto{                 
         padding: 0px;
         padding-right: 3px;
         border: 0;
